@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--My Favorite Places-->
         <scene sceneID="496-Vq-ywD">
             <objects>
                 <tableViewController id="rbZ-HO-6CE" customClass="MainViewController" customModule="MyFavoritePlaces" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,7 +29,7 @@
                             <outlet property="delegate" destination="rbZ-HO-6CE" id="GNt-fY-ybA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="DY8-lb-Ixq"/>
+                    <navigationItem key="navigationItem" title="My Favorite Places" id="DY8-lb-Ixq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dCI-5Z-l8X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,6 +42,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jjd-c7-TI5">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="rbZ-HO-6CE" kind="relationship" relationship="rootViewController" id="cFi-3n-vDh"/>
