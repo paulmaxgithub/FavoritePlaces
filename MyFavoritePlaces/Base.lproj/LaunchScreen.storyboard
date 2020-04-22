@@ -23,9 +23,9 @@
                         <color key="backgroundColor" red="0.63298457860000001" green="0.85946750640000003" blue="0.59387165310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GLo-ai-y5l" secondAttribute="trailing" id="8Qc-TO-4wZ"/>
-                            <constraint firstItem="GLo-ai-y5l" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="W05-DZ-JLc"/>
+                            <constraint firstItem="GLo-ai-y5l" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottomMargin" constant="34" id="W05-DZ-JLc"/>
                             <constraint firstItem="GLo-ai-y5l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pRH-Ek-1db"/>
-                            <constraint firstItem="GLo-ai-y5l" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="s53-5J-scW"/>
+                            <constraint firstItem="GLo-ai-y5l" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-44" id="s53-5J-scW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
