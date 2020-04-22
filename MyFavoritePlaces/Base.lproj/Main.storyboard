@@ -77,6 +77,7 @@
                                     <outlet property="locationLabel" destination="qgD-aM-dMa" id="HCO-Wf-5lB"/>
                                     <outlet property="nameLabel" destination="AfB-Oe-YWH" id="stc-jZ-V5U"/>
                                     <outlet property="typeLabel" destination="Q19-H8-Ewf" id="qRV-03-ZvY"/>
+                                    <segue destination="US5-nM-J3l" kind="show" identifier="showDetail" id="URG-n1-Pyf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -85,7 +86,7 @@
                             <outlet property="delegate" destination="rbZ-HO-6CE" id="GNt-fY-ybA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Favorite Places" id="DY8-lb-Ixq">
+                    <navigationItem key="navigationItem" title="My Favorite Places" largeTitleDisplayMode="never" id="DY8-lb-Ixq">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="O7w-Hf-KGw">
                             <connections>
                                 <segue destination="TLN-EX-4Nb" kind="presentation" modalTransitionStyle="crossDissolve" id="eLR-bq-8br"/>
@@ -101,8 +102,8 @@
         <scene sceneID="hda-Ad-JVH">
             <objects>
                 <navigationController id="ew0-qJ-7xa" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jjd-c7-TI5">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Jjd-c7-TI5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
@@ -121,7 +122,7 @@
             <objects>
                 <tableViewController id="US5-nM-J3l" customClass="NewPlaceViewController" customModule="MyFavoritePlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="87e-3C-eyH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
@@ -136,7 +137,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="WCb-2p-qUp">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="250.00000000000006"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -261,7 +262,7 @@
                             <outlet property="delegate" destination="US5-nM-J3l" id="drC-bP-jZc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Create New Place" id="MKc-6Y-Qqc">
+                    <navigationItem key="navigationItem" title="Create New Place" largeTitleDisplayMode="always" id="MKc-6Y-Qqc">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Qw6-P0-LgZ">
                             <connections>
                                 <action selector="cancelAction:" destination="US5-nM-J3l" id="oe7-5l-gMM"/>
@@ -284,7 +285,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZc-Uc-xdG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="64U-Gx-jtg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2184" y="121"/>
+            <point key="canvasLocation" x="1475" y="436"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BGT-Xt-6Me">
@@ -303,10 +304,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cxw-9q-qfG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1454" y="121"/>
+            <point key="canvasLocation" x="1475" y="-254"/>
         </scene>
     </scenes>
     <resources>
         <image name="Photo" width="195" height="196"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="URG-n1-Pyf"/>
+    </inferredMetricsTieBreakers>
 </document>
