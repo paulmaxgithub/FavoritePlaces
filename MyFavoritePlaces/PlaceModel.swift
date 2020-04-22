@@ -6,14 +6,15 @@
 //  Copyright © 2020 PaulmaX. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Place {
     
     var name: String
-    var location: String
-    var type: String
-    var image: String
+    var location: String?
+    var type: String?
+    var image: UIImage?
+    var restaurantImage: String?
     
     static let restaurantNames = ["Burger Heroes", "Kitchen", "Bonsai", "Дастархан",
                                   "Индокитай", "X.O", "Балкан Гриль", "Sherlock Holmes",
@@ -28,9 +29,9 @@ struct Place {
             places.append(Place(name: place,
                                 location: "Minsk",
                                 type: "Bar",
-                                image: place))
+                                image: nil,
+                                restaurantImage: place))
         }
-        
         return places
     }
 }
