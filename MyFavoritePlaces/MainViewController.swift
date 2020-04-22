@@ -35,6 +35,16 @@ class MainViewController: UITableViewController {
         return cell
     }
     
+    // MARK: - Table View Delegate
+    override func tableView(_ tableView: UITableView,
+                            commit editingStyle: UITableViewCell.EditingStyle,
+                            forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let place = places[indexPath.row]
+            StorageManager.deleteObject(place)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
     /*
      // MARK: - Navigation
      
