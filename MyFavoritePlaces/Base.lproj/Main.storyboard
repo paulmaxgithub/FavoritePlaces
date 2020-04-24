@@ -293,10 +293,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="TJC-LZ-WIC" firstAttribute="top" secondItem="RPJ-3y-8iF" secondAttribute="bottom" constant="1" id="Ccl-O9-9vb"/>
                             <constraint firstItem="RPJ-3y-8iF" firstAttribute="top" secondItem="YQ3-Uv-p1k" secondAttribute="top" id="Qjf-Us-UFm"/>
                             <constraint firstItem="RPJ-3y-8iF" firstAttribute="trailing" secondItem="YQ3-Uv-p1k" secondAttribute="trailing" id="V30-kF-zET"/>
                             <constraint firstItem="RPJ-3y-8iF" firstAttribute="leading" secondItem="YQ3-Uv-p1k" secondAttribute="leading" id="pVA-yC-Jye"/>
+                            <constraint firstItem="TJC-LZ-WIC" firstAttribute="top" secondItem="RPJ-3y-8iF" secondAttribute="bottom" constant="1" id="xAE-Lc-fQp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YQ3-Uv-p1k"/>
                     </view>
