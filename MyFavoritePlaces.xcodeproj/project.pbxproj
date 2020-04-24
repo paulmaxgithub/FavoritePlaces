@@ -10,6 +10,7 @@
 		45FE65425EB27615357BAEEF /* Pods_MyFavoritePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D597795E687C8E738C261B8 /* Pods_MyFavoritePlaces.framework */; };
 		63934514244903BA00C25FA5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63934513244903BA00C25FA5 /* CustomTableViewCell.swift */; };
 		6393451624490BBB00C25FA5 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6393451524490BBB00C25FA5 /* PlaceModel.swift */; };
+		63B08F9124538CE300EFE30C /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B08F9024538CE300EFE30C /* RatingControl.swift */; };
 		63C333BE2448BEB8005D291B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C333BD2448BEB8005D291B /* AppDelegate.swift */; };
 		63C333C02448BEB8005D291B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C333BF2448BEB8005D291B /* SceneDelegate.swift */; };
 		63C333C52448BEB8005D291B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C333C32448BEB8005D291B /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		63934513244903BA00C25FA5 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		6393451524490BBB00C25FA5 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		63B08F9024538CE300EFE30C /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		63C333BA2448BEB8005D291B /* MyFavoritePlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFavoritePlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C333BD2448BEB8005D291B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63C333BF2448BEB8005D291B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				63C333D12448C2A9005D291B /* MainViewController.swift */,
 				63EB77BC244F96EE00A914F9 /* NewPlaceViewController.swift */,
 				63934513244903BA00C25FA5 /* CustomTableViewCell.swift */,
+				63B08F9024538CE300EFE30C /* RatingControl.swift */,
 				6393451524490BBB00C25FA5 /* PlaceModel.swift */,
 				63EB77BE245092A800A914F9 /* StorageManager.swift */,
 				63C333C32448BEB8005D291B /* Main.storyboard */,
@@ -114,7 +117,7 @@
 				63C333B62448BEB8005D291B /* Sources */,
 				63C333B72448BEB8005D291B /* Frameworks */,
 				63C333B82448BEB8005D291B /* Resources */,
-				B436C4D9983C1736A5C908BF /* [CP] Embed Pods Frameworks */,
+				FC83B366CCBAA63DC5904F14 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,7 +197,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B436C4D9983C1736A5C908BF /* [CP] Embed Pods Frameworks */ = {
+		FC83B366CCBAA63DC5904F14 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -222,6 +225,7 @@
 				63EB77BD244F96EE00A914F9 /* NewPlaceViewController.swift in Sources */,
 				63C333BE2448BEB8005D291B /* AppDelegate.swift in Sources */,
 				63EB77BF245092A800A914F9 /* StorageManager.swift in Sources */,
+				63B08F9124538CE300EFE30C /* RatingControl.swift in Sources */,
 				6393451624490BBB00C25FA5 /* PlaceModel.swift in Sources */,
 				63934514244903BA00C25FA5 /* CustomTableViewCell.swift in Sources */,
 				63C333C02448BEB8005D291B /* SceneDelegate.swift in Sources */,
